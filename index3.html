@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section class="price" id="price" #price>
+    <div class="booking">
+        <h2 class="sub-title">Find out a price and book</h2>
+        <div class="price-text">
+            Fill in the details and we will call you back to clarify all the details of the booking
+        </div>
+        <form action=" " class="price-form" [formGroup]="priceForm">
+            <input type="text" class="price-input" id="name" placeholder="Your name" formControl="name">
+            <input type="text" class="price-input" id="phone" placeholder="Your phone" formControl="phone">
+            <input type="text" class="price-input"  id="car" placeholder="The car you are interested in" formControl="car">
+            <button class="button" id="price-action" (click)="onSumbit()" [disabled]="!priceForm.valid">Find out the price</button>
+        </form>
+        <img src="src/assets/images/rolls.png" alt="Rolls" class="price-image">
+    </div>
+</section>
+</body>
+</html>
+
+<footer class="footer">
+    <div class="container">
+        <div class="logo">
+            <img src="src/assets/images/logo.png" alt="logo">
+        </div>
+        <div class="rights">All rights reserved</div>
+    </div>
+</footer>
+<script src="scripts/script.js"></script>  
+

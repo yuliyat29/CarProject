@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium car rental</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="../src/assets/images/logo.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item">
+                    <a href="#">Main</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#car">Cars</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#price">Car booking</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<section class="main">
+    <div class="container">
+        <h1 class="main-title">Premium car rental</h1>
+        <div class="main-text">
+          Our club has a solid collection of sports cars - from fairly common serial
+          cars to a real racing exclusive. Take advantage of the unique opportunity to drive a real
+          legends and find out what she's capable of off the race track!
+        </div>
+        <div class="main-action">
+            <button class="button" id="main-action" (click)="goScroll(price,car)">See cars</button>
+        </div>
+    </div>
+</section>
+<section class="car" id="cars">
+    <div class="container">
+        <h2 class="sub-title">Our car park</h2>
+        <div class="car-items">
+            <div class="car-item">
+                <div class="car-item-image">
+                <img src="../src/assets/images/1.png" alt="Image 1">
+            </div>
+            <div class="car-item-title">Lamborghini Huracan Spyder</div>
+            <div class="car-item-info">
+                <div class="car-item-point">
+                    <img src="../src/assets/images/transmission.png" alt="Transmission">
+                    <div>Automatic transmission</div>
+                    <div>Automatic</div>
+                </div>
+                <div class="car-item-point">
+                    <img src="src/assets/images/wheel.png" alt="Wheel">
+                    <div>Engine</div>
+                    <div> 5.2 L</div>
+                </div>
+                <div class="car-item-point">
+                    <img src="src/assets/images/year.png" alt="Year">
+                    <div>Year of issue</div>
+                    <div>2019</div>
+                </div>
+            </div>
+            <div class="car-item-action">
+                <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <div class="car-item-image">
+            <img src="../src/assets/images/2.png" alt="Image 2">
+        </div>
+        <div class="car-item-title">Chevrolet Corvette</div>
+        <div class="car-item-info">
+            <div class="car-item-point">
+                <img src="../src/assets/images/transmission.png" alt="Transmission">
+                <div>Automatic transmission</div>
+                <div>Automatic</div>
+            </div>
+            <div class="car-item-point">
+                <img src="src/assets/images/wheel.png" alt="Wheel">
+                <div>Engine</div>
+                <div> 6.2 L</div>
+            </div>
+            <div class="car-item-point">
+                <img src="src/assets/images/year.png" alt="Year">
+                <div>Year of issue</div>
+                <div>2017</div>
+            </div>
+        </div>
+        <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+        </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/3.png" alt="Image 3">
+    </div>
+    <div class="car-item-title">Ferrari California</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 3.9 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2010</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/4.png" alt="Image 4">
+    </div>
+    <div class="car-item-title">Lamborghini Urus</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 4.0 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2019</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/5.png" alt="Image 5">
+    </div>
+    <div class="car-item-title">Audi R8</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 5.2 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2018</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/6.png" alt="Image 6">
+    </div>
+    <div class="car-item-title">Chevrolet Camaro</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 2.0 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2019</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/7.png" alt="Image 7">
+    </div>
+    <div class="car-item-title">Maserati Quattroporte</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 3.0 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2018</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/8.png" alt="Image 8">
+    </div>
+    <div class="car-item-title">Dodge Challenger</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 6.4 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2019</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-item-image">
+        <img src="../src/assets/images/9.png" alt="Image 9">
+    </div>
+    <div class="car-item-title">Nissan GT-R</div>
+    <div class="car-item-info">
+        <div class="car-item-point">
+            <img src="../src/assets/images/transmission.png" alt="Transmission">
+            <div>Automatic transmission</div>
+            <div>Automatic</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/wheel.png" alt="Wheel">
+            <div>Engine</div>
+            <div> 3.8 L</div>
+        </div>
+        <div class="car-item-point">
+            <img src="src/assets/images/year.png" alt="Year">
+            <div>Year of issue</div>
+            <div>2019</div>
+        </div>
+    </div>
+    <div class="car-item-action">
+        <button class="button car-button" (click)="goScroll(price,car)">Booking</button>
+    </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="price" id="price">
+    <div class="container">
+      <h2 class="sub-title">Find out a price and book</h2>
+      <div class="price-text">
+          Fill in the details and we will call you back to clarify all the details of the booking
+      </div>
+        <form action=" " class="price-form">
+            <input type="text" class="price-input" placeholder="Ваше имя">
+            <input type="text" class="price-input" placeholder="Ваше телефон">
+            <input type="text" class="price-input" placeholder="Автомобиль, который вас интересует">
+            <button class="button">Узнать цену</button>
+        </form>
+        <img src="../src/assets/images/rolls.png" alt="Rolls" class="price-image">
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="logo">
+            <img src="../src/assets/images/logo.png" alt="logo">
+        </div>
+        <div class="rights">All rights reserved</div>
+    </div>
+</footer>
+</body>
+</html><script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script>
