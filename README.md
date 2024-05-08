@@ -8,7 +8,7 @@ Software Atelier 1
 
 University project 
 
--CarProject is a simple web application that simulates a car dashboard. It's implemented using HTML, CSS, and JavaScript to provide users with an interactive experience of controlling a virtual car.
+CarProject is a simple web application that simulates a car dashboard. It's implemented using HTML, CSS, and JavaScript to provide users with an interactive experience of controlling a virtual car.
 
 ## Features
 
